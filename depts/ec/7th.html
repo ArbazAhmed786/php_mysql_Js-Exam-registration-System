@@ -1,0 +1,242 @@
+<!DOCTYPE html> 
+
+<html> 
+
+      
+
+<head> 
+
+    <title> 
+
+        Style a checkbox using CSS 
+
+    </title> 
+
+      
+
+    <style> 
+
+        .script { 
+
+            display: block; 
+
+            position: relative; 
+
+            padding-left: 45px; 
+
+            margin-bottom: 15px; 
+
+            cursor: pointer; 
+
+            font-size: 20px; 
+
+        } 
+
+          
+
+        /* Hide the default checkbox */ 
+
+        input[type=checkbox] { 
+
+            visibility: hidden; 
+
+        } 
+
+          
+
+        /* creating a custom checkbox based 
+
+            on demand */ 
+
+        .geekmark { 
+
+            position: absolute; 
+
+            top: 100; 
+
+            left: 100; 
+
+            height: 25px; 
+
+            width: 25px; 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when hovering over checkbox */ 
+
+        .script:hover input ~ .geekmark { 
+
+            background-color: yellow; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is active */ 
+
+        .script input:active ~ .geekmark { 
+
+            background-color: red; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is checked */ 
+
+        .script input:checked ~ .geekmark { 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* checkmark to be shown in checkbox */ 
+
+        /* It is not be shown when not checked */ 
+
+        .geekmark:after { 
+
+            content: ""; 
+
+            position: absolute; 
+
+            display: none; 
+
+        } 
+
+          
+
+        /* display checkmark when checked */ 
+
+        .script input:checked ~ .geekmark:after { 
+
+            display: block; 
+
+        } 
+
+          
+
+        /* styling the checkmark using webkit */ 
+
+        /* creating a square to be the sign of 
+
+            checkmark */ 
+
+        .script .geekmark:after { 
+
+            left: 6px; 
+
+            bottom: 5px; 
+
+            width: 6px; 
+
+            height: 6px; 
+
+            border: solid white; 
+
+            border-width: 4px 4px 4px 4px; }
+
+		input[type=button],
+		input[type=submit],input[type=reset]
+		{
+		background-color:#4CAF50;
+		border:none;
+		color:white;
+		padding:16px 32px;
+		margin:4px 2px;
+		cursor:pointer;
+		}
+
+    </style> 
+
+</head> 
+
+  
+
+<body> 
+
+<p style="font-family:arial;font-size:20px;" align="center">
+    SUBJECTS FOR 7TH SEM OF COMPUTERSCIENCE BRANCH</p> 
+
+      
+
+    <p align="center"><ul><label class="script" style = "color:green;"> 
+
+         <li>Biology fo Engineers</li>
+
+        <input type="checkbox" align="center"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+      
+
+    <label class="script" style = "color:green;"> 
+
+        <li>Cyber Law,Forensics and IPR</li> 
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+ <label class="script" style = "color:green;"> 
+
+        <li>NoSQL Datbase</li>
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+ <label class="script" style = "color:green;"> 
+
+        <li>Machine Learning</li> 
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+ <label class="script" style = "color:green;"> 
+
+        <li>Data Science</li>
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label>
+<label class="script" style = "color:green;"> 
+
+        <li>Python Programming</li>
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label></ul>
+ <input type="Submit" style="width:100px;margin:0 8%;position:relative;left:-25px;">
+<input type="Reset" style="width:100px;margin:0 8%;position:relative;right:-25px;">
+ 
+</p>
+    
+
+</body> 
+
+  
+
+</html>                     

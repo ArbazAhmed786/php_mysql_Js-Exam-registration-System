@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+
+<html> 
+<script type="text/javascript" src="click.js">
+   </script>   
+
+<head>
+<script LANGUAGE="javascript">
+function ValidateForm(form)
+{
+ErrorText="";
+if((form.Physics[0].checked==false)&&(form.Chemisrty[1].checked==false)&&(form.Mathematics-1[2].checked==false)&&
+(form.C-prgramming[3].checked==false)&&(form.English and Communication Skills.checked==false))
+{
+alert("Please choose Subjects");
+return false;
+}
+if(ErrorText="")
+{form.submit()}
+}
+</script>
+      
+
+    <style> 
+
+        .script { 
+
+            display: block; 
+
+            position: relative; 
+
+            padding-left: 45px; 
+
+            margin-bottom: 15px; 
+
+            cursor: pointer; 
+
+            font-size: 20px; 
+
+        } 
+
+          
+
+        /* Hide the default checkbox */ 
+
+        input[type=checkbox] { 
+
+            visibility: hidden; 
+
+        } 
+
+          
+
+        /* creating a custom checkbox based 
+
+            on demand */ 
+
+        .geekmark { 
+
+            position: absolute; 
+
+            top: 0; 
+
+            left: 0; 
+
+            height: 25px; 
+
+            width: 25px; 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when hovering over checkbox */ 
+
+        .script:hover input ~ .geekmark { 
+
+            background-color: yellow; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is active */ 
+
+        .script input:active ~ .geekmark { 
+
+            background-color: red; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is checked */ 
+
+        .script input:checked ~ .geekmark { 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* checkmark to be shown in checkbox */ 
+
+        /* It is not be shown when not checked */ 
+
+        .geekmark:after { 
+
+            content: ""; 
+
+            position: absolute; 
+
+            display: none; 
+
+        } 
+
+          
+
+        /* display checkmark when checked */ 
+
+        .script input:checked ~ .geekmark:after { 
+
+            display: block; 
+
+        } 
+
+          
+
+        /* styling the checkmark using webkit */ 
+
+        /* creating a square to be the sign of 
+
+            checkmark */ 
+
+        .script .geekmark:after { 
+
+            left: 6px; 
+
+            bottom: 5px; 
+
+            width: 6px; 
+
+            height: 6px; 
+
+            border: solid white; 
+
+            border-width: 4px 4px 4px 4px; 
+		
+
+
+        } 
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 7px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  float: none;
+  width:100px;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e41;
+}
+
+
+
+
+ul
+{	
+	list-style-type:none;
+	margin:-8px;
+	padding:6;
+	overflow:hidden;
+	background-color: #696969;
+	text-decoration:none;
+	border-style:none;
+}
+li
+{
+ float: right;;
+}
+li a
+{
+	display:inline-block;
+	color:white;
+	text-align:center;
+	margin:-6px;
+	padding:19px 20px;
+	text-decoration:none;
+	border-style:none;
+}
+li a:hover
+{
+	margin:-6px;
+	background-color:#000000;
+	text-decoration:none;
+	border-style:none;
+}
+
+.active
+{
+	margin:-6px;
+	background-color:#000000;
+	text-decoration:none;
+	border-style:none;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+    </style> 
+
+</head> 
+
+  
+
+<body> 
+<ul>
+	
+	<li><a href="first.html"  target="_top">LOG OUT</a></li>
+	
+	
+</ul>
+
+    <p style="font-family:garamond;font-size:16px;font-style:italic;"><h1>SELECT SUBJECTS:</h1><br></p>
+ <p style="font-family:garamond;font-size:16px;font-style:italic;"><h2>1st SEMESTER INFORMATION SCIENCE ENGINEERING</h2></p><br> 
+
+      
+
+    <form name="subjects" method=post><label class="script" style = "color:green;"> 
+
+        Physics
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+      
+
+    <label class="script" style = "color:green;"> 
+
+        Chemistry 
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+ <label class="script" style = "color:green;"> 
+
+        Mathemetics-1 
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+ <label class="script" style = "color:green;"> 
+
+        C-programming 
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+ <label class="script" style = "color:green;"> 
+
+        English and Communication Skills 
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+<div class="btn-group">
+  <button class="button" onclick="ValidateForm(form)">Submit</button>
+   <button class="button" style="margin:20px;">Reset</button>
+  <br><br><br>
+
+
+</div>
+<a href="event.html">Print Exam Application Form</a>
+
+ </form>
+
+</body> 
+
+  
+
+</html>                     

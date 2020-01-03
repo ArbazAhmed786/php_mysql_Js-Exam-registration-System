@@ -1,0 +1,379 @@
+<!DOCTYPE html> 
+
+<html> 
+<head>
+<title> CSE | 7th Sem</title>
+    <style> 
+
+        .script { 
+
+            display: block; 
+
+            position: relative; 
+
+            padding-left: 45px; 
+
+            margin-bottom: 15px; 
+
+            cursor: pointer; 
+
+            font-size: 20px; 
+
+        } 
+
+          
+
+        /* Hide the default checkbox */ 
+
+        input[type=checkbox] { 
+
+            visibility: hidden; 
+
+        } 
+
+          
+
+        /* creating a custom checkbox based 
+
+            on demand */ 
+
+        .geekmark { 
+
+            position: absolute; 
+
+            top: 0; 
+
+            left: 0; 
+
+            height: 25px; 
+
+            width: 25px; 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when hovering over checkbox */ 
+
+        .script:hover input ~ .geekmark { 
+
+            background-color: yellow; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is active */ 
+
+        .script input:active ~ .geekmark { 
+
+            background-color: red; 
+
+        } 
+
+          
+
+        /* specify the background color to be 
+
+        shown when checkbox is checked */ 
+
+        .script input:checked ~ .geekmark { 
+
+            background-color: green; 
+
+        } 
+
+          
+
+        /* checkmark to be shown in checkbox */ 
+
+        /* It is not be shown when not checked */ 
+
+        .geekmark:after { 
+
+            content: ""; 
+
+            position: absolute; 
+
+            display: none; 
+
+        } 
+
+          
+
+        /* display checkmark when checked */ 
+
+        .script input:checked ~ .geekmark:after { 
+
+            display: block; 
+
+        } 
+
+          
+
+        /* styling the checkmark using webkit */ 
+
+        /* creating a square to be the sign of 
+
+            checkmark */ 
+
+        .script .geekmark:after { 
+
+            left: 6px; 
+
+            bottom: 5px; 
+
+            width: 6px; 
+
+            height: 6px; 
+
+            border: solid white; 
+
+            border-width: 4px 4px 4px 4px; 
+		
+
+
+        } 
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid white;
+  border-radius : 10px;
+  color: black;
+  padding: 7px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  float: none;
+  width:100px;
+}
+
+.btn-group .btn:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #3e8e3e;
+}
+
+
+
+<!--
+ul
+{	
+	list-style-type:none;
+	margin:-8px;
+	padding:6;
+	overflow:hidden;
+	background-color: #696969;
+	text-decoration:none;
+	border-style:none;
+}
+li
+{
+ float: right;;
+}
+
+
+li a
+{
+	display:inline-block;
+	color:white;
+	text-align:center;
+	margin:-6px;
+	padding:19px 20px;
+	text-decoration:none;
+	border-style:none;
+}
+li a:hover
+{
+	margin:-6px;
+	background-color:#000000;
+	text-decoration:none;
+	border-style:none;
+}
+
+.active
+{
+	margin:-6px;
+	background-color:#000000;
+	text-decoration:none;
+	border-style:none;
+}
+
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+-->
+
+    </style> 
+
+</head> 
+
+  
+
+<body> 
+<!--
+<ul>
+	
+	<li><a href="first.html"  target="_top">LOG OUT</a></li>
+	
+	
+</ul>
+-->
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+  <!--<a class="navbar-brand" href="http://bmsce.ac.in">
+          <label style = "background-color:black;	">BMSCE</li>
+        </a>-->
+    
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <!--
+	  <a class="nav-link" href="#">Home | Login
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin\login.html">Admin</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="application_form/index.php">Register</a>
+        </li>
+-->
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Help</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<center>
+    <p style="font-family:garamond;font-size:16px;font-style:italic;">
+<h1>7th SEMESTER COMPUTER SCIENCE SUBJECTS</h1></p>
+
+ 
+</center>
+      
+
+    <form  name="subjects" method=post style = "background-color:rgba(0,0,0,0.03);padding-top:25px;padding-left:30px;padding-bottom:0px;margin-left:28%;margin-right:27%;">
+
+<label class="script" > 
+
+        Biology For Engineers [19CSXXBSBIE]
+
+        <input type="checkbox"> 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+      
+
+    <label class="script" > 
+
+        Computer Networks [19CS5PCCON]
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+ <label class="script" > 
+
+      Unix Shell Programming & Linux Internals [19CS5PCUSL]
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+ <label class="script" >
+	Software Engineering  [19CS5PCSEG]
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+ <label class="script"> 
+
+        Internet of Things [19CS5PEIOT] 
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+<label class="script"> 
+
+        Advanced Java and J2EE [19CS5PEAJJ]
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+<label class="script"> 
+
+        Advanced Algorithms [19CS5PEAAG]
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+<label class="script"> 
+
+        Project Work-3 [19CS3PWPW3]
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+<label class="script"> 
+
+        MOOC Course / Virtual lab  [19CS7NCNC7 ]
+
+        <input type="checkbox" > 
+
+        <span class="geekmark"></span> 
+
+    </label> 
+
+<div class="btn-group" align = "center">
+  <input  type = "submit" value = "Submit" class="button" onsubmit="ValidateForm(form)"></button>
+   <input type = "reset" value = "Reset" class="button" style="margin:20px;"></button>
+  <br><br><br>
+
+
+</div>
+
+
+ </form>
+</body> 
+</html>                     
